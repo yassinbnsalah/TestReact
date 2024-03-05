@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Home() {
+  const [hideTitle , sethideTitle] = useState(false)
   return (
     <div>
-      Homeee
-      <Link to={"/"} > Back to Home</Link>
+     <h1 hidden={hideTitle}> Welcome to Our competitions </h1>
     </div>
   )
 }
